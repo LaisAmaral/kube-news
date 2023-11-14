@@ -24,8 +24,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            laisamarals/live-kube-news:${{github.run_number}}
-            laisamarals/live-kube-news:latest
+            laisamaral/live-kube-news:${{github.run_number}}
+            laisamaral/live-kube-news:latest
   CD:
     runs-on: ubuntu-latest
     needs: [CI]
